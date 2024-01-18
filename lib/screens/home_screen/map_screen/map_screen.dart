@@ -1,7 +1,7 @@
 import 'package:casa_vertical_stepper/casa_vertical_stepper.dart';
 import 'package:flutter/material.dart';
 import 'package:sahara_app/themes/app_textStyle.dart';
-import '../../themes/app_colors.dart';
+import '../../../themes/app_colors.dart';
 
 class MapScreen extends StatefulWidget {
   const MapScreen({super.key});
@@ -87,7 +87,7 @@ class _MapScreenState extends State<MapScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
 
                   GestureDetector(
                     onTap: (){
@@ -99,15 +99,15 @@ class _MapScreenState extends State<MapScreen> {
                       child: Container(height: 12,width: MediaQuery.sizeOf(context).width*0.30,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
-                        color: Color(0xf557D8CAC),
+                        color: const Color(0xf557D8CAC),
                       ),
                     ),
                     ),
                   ),
-                  SizedBox(height: 15,),
+                  const SizedBox(height: 15,),
             ListView.builder(
               scrollDirection: Axis.vertical,
-           physics: ScrollPhysics(),
+           physics: const ScrollPhysics(),
               shrinkWrap: true,itemCount: stepperPlaceNumber.length,
               itemBuilder: (BuildContext context, int index) { return     SizedBox(
 
@@ -127,9 +127,9 @@ class _MapScreenState extends State<MapScreen> {
 
                             children: [
                               Text(stepperPlace[index].toString(),style: AppTextStyles.boldStyle.copyWith(color: AppColors.titleColor,fontSize: 15),),
-SizedBox(width: 10,),
+const SizedBox(width: 10,),
                               index==0?
-                          CircleAvatar(
+                          const CircleAvatar(
                             radius: 10,
                             backgroundColor: AppColors.greenColor,child: Icon(
                             Icons.done,size: 10,color: AppColors.primaryWhite,
@@ -141,11 +141,11 @@ SizedBox(width: 10,),
 
                            ],
                           ),
-                          Text('Alsouq Alsagheer Tunnel, Al Hajla...',style: AppTextStyles.regularStyle.copyWith(color: Color(0xff7D8CAC),fontSize: 14),),
+                          Text('Alsouq Alsagheer Tunnel, Al Hajla...',style: AppTextStyles.regularStyle.copyWith(color: const Color(0xff7D8CAC),fontSize: 14),),
                         ],
                       ),
-SizedBox(width: 5),
-                      CircleAvatar(
+const SizedBox(width: 5),
+                      const CircleAvatar(
                         radius: 15,
                 backgroundColor: AppColors.hintTextColor,child: Icon(
                 Icons.arrow_forward_ios,size: 15,color: AppColors.primaryWhite,
@@ -156,16 +156,16 @@ SizedBox(width: 5),
                   leading:
 
                   Container(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        border:Border.all(color: Color(0xff7D8CAC))
+                        border:Border.all(color: const Color(0xff7D8CAC))
                     ),
-                    child:     Text(stepperPlaceNumber[index].toString(),style: AppTextStyles.boldStyle.copyWith(color:  Color(0xff7D8CAC),fontSize: 16),),
+                    child:     Text(stepperPlaceNumber[index].toString(),style: AppTextStyles.boldStyle.copyWith(color:  const Color(0xff7D8CAC),fontSize: 16),),
                   ),
 
 
-                  view:Column(
+                  view:const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.start,
                     children: [
 
